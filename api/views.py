@@ -1014,7 +1014,7 @@ class VideoView(generics.ListCreateAPIView):
 
         return queryset
     def post(self, request, format=None):
-        print(request)
+        print(request.data)
         return None
 
 
