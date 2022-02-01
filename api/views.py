@@ -1013,6 +1013,9 @@ class VideoView(generics.ListCreateAPIView):
                     and video.date_creation.date() <= datetime.strptime(end, '%Y-%m-%d %H:%M').date()]
 
         return queryset
+    def post(self, request, format=None):
+        print(request)
+        return None
 
 
 class VideoDetail(generics.RetrieveUpdateDestroyAPIView):
