@@ -962,7 +962,7 @@ class ContractViewClient(generics.ListCreateAPIView):
 
 
 class VideoView(generics.ListCreateAPIView):
-    permission_classes = [IsAuthenticated & ChainePermissions]
+    # permission_classes = [IsAuthenticated & ChainePermissions]
     queryset = VideoPub.objects.all()
     serializer_class = VideoSerializer
     pagination_class = MyPagination
@@ -1013,9 +1013,6 @@ class VideoView(generics.ListCreateAPIView):
                     and video.date_creation.date() <= datetime.strptime(end, '%Y-%m-%d %H:%M').date()]
 
         return queryset
-    def post(self, request, format=None):
-        print(request.data)
-        return None
 
 
 class VideoDetail(generics.RetrieveUpdateDestroyAPIView):
