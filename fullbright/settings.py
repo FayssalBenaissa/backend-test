@@ -171,3 +171,14 @@ SIMPLE_JWT = {
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
     'TOKEN_TYPE_CLAIM': 'token_type',
 }
+
+
+AWS_ACCESS_KEY_ID = "AKIAUQD2ZQZFWWQSHUXY"
+AWS_SECRET_ACCESS_KEY = "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"
+AWS_STORAGE_BUCKET_NAME = "bucket-gls39d"
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+AWS_S3_REGION_NAME = "Paris"
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+AWS_S3_VERIFY = True
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' 
