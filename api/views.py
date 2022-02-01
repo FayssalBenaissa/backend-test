@@ -1016,7 +1016,7 @@ class VideoView(generics.ListCreateAPIView):
 
 
 class VideoDetail(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = [IsAuthenticated & ChainePermissions]
+    
     queryset = VideoPub.objects.all()
     serializer_class = VideoSerializer
     lookup_fields = ['pk']
