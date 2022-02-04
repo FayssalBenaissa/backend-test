@@ -155,6 +155,11 @@ DATETIME_FORMAT = "%Y-%m-%d%H:%M:%S"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / 'media'
 
+
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
 AUTH_USER_MODEL = "users.User"
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=50),
