@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
-    'sslserver',
 ]
 
 MIDDLEWARE = [
@@ -157,9 +156,7 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / 'media'
 
 
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+
 
 AUTH_USER_MODEL = "users.User"
 SIMPLE_JWT = {
