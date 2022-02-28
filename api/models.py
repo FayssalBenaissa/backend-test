@@ -229,3 +229,7 @@ class VideoPub(models.Model):
 class Chaine(models.Model):
     nom = models.CharField(max_length=20, default="", unique=True)
     image = models.ImageField(upload_to="media", default="")
+    
+
+class Test(models.Model):
+    nom = models.CharField(max_length=20, default="", unique=True)
