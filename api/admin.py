@@ -20,4 +20,5 @@ admin.site.register(Contract)
 admin.site.register(Abonnement)
 admin.site.register(VideoPub)
 admin.site.register(Chaine)
+admin.site.register(Test)
 # test test
